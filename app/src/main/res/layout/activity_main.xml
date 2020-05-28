@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:text="Jadwal Alaram Manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/tanggal"
+                style="@style/Base.Widget.AppCompat.ImageButton"
+                android:src="@drawable/ic_date_range_black"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/tv_once_date"
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Alaram"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/waktu"
+                android:src="@drawable/ic_access_time_black"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.ImageButton"/>
+
+            <TextView
+                android:id="@+id/tv_once_time"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:text="Waktu Alaram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/tv_message"
+                android:layout_height="wrap_content"
+                android:hint="Pesan Alaram"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,InvalidId" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_set_once_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/set_jadwal" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/repeating_alarm"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_repeating_time"
+                android:src="@drawable/ic_access_time_black"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="26sp"
+                android:layout_margin="20dp"
+                android:text="@string/waktu_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_repeating_time" />
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/edt_repeating_message"
+                android:layout_marginEnd="15dp"
+                android:layout_height="wrap_content"
+                android:hint="Pesan Alaram"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,InvalidId" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel_repeating_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/cancel_alarm" />
+            <Button
+                android:id="@+id/btn_set_repeating_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/set_alarm_repeating_alarm" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

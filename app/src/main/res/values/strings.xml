@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlarmManager</string>
+    <string name="jam_alarm">Jam alarm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="set_jadwal">Set Jadwal</string>
+    <string name="repeating_alarm">repeating alarm</string>
+    <string name="waktu_alarm">waktu alarm</string>
+    <string name="cancel_alarm">cancel alarm</string>
+    <string name="set_alarm_repeating_alarm">set alarm repeating alarm</string>
+</resources>
